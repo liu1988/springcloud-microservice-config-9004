@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active:
+    - dev
+
+---
+spring:
+  profiles: dev #开发环境
+  application:
+    name: springcloud-microservice-config-dev-9004
+
+---
+spring:
+  profiles: test #测试环境
+  application:
+    name: springcloud-microservice-config-test-9004
+
+---
+spring:
+  profiles: prod #生产环境
+  application:
+    name: springcloud-microservice-config-prod-9004
